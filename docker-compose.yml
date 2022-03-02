@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
     ports:
       - "443:443"
-    volume:
+    volumes:
       - /var/lib/drone:/data
     env_file:
       - variables.env
